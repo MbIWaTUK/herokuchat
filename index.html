@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>чатик</title>
+    <link href="uikit.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="animate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div id="main">
+        <div class="uk-width-small-9-10 uk-width-mini-9-10 uk-width-medium-5-6 uk-width-large-5-6 uk-width-xlarge-5-6 uk-container-center" id="chat-box">
+            <div class="uk-grid uk-margin-remove" id="client-box">
+                <div class="uk-width-medium-4-5 uk-width-mini-1-1 uk-width-small-1-1 uk-width-lage-4-5 uk-width-xlarge-4-5" id="messages">
+                </div>
+                <div class="uk-width-1-5 uk-hidden-small uk-hidden-mini" id="clients-list">
+                    <div class="uk-h3 uk-text-center">Пользователи</div>
+                </div>
+                <div class="uk-panel uk-width-1-1 uk-grid uk-form uk-margin-remove uk-padding-remove" id="message-form">
+                        <div class="uk-badge uk-badge-success uk-badge-notification uk-hidden-small uk-hidden-mini" id="login"></div>
+                        <input type="text" name="message" id="message" class="uk-input uk-width-4-5">
+                        <button type="button" name="send" class="uk-button uk-button-success uk-width-1-5"><span class="uk-hidden-mini uk-hidden-small">Отправить</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io.js"></script>
+    <script src="/jquery.js"></script>
+    <script src="/uikit.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
